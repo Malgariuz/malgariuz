@@ -1,121 +1,125 @@
+/* Resetear márgenes y rellenos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilo general del cuerpo */
 body {
-  font-family: Calibri, sans-serif;
-  background: linear-gradient(135deg, #2c3e50, #34495e); /* Fondo oscuro con gradiente */
-  color: #f5f5f5; /* Color de texto claro para contraste */
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #333, #111); /* Fondo oscuro gradiente */
+  color: #f0f0f0;
 }
 
-/* Contenedor principal */
-header, .grid, footer {
-  max-width: 840px;
-  margin: 0 auto;
+/* Estilo del contenedor principal */
+main {
+  margin: 1rem auto;
+  max-width: 1200px;
+  padding: 1rem;
 }
 
-/* Encabezado */
-header {
-  background: linear-gradient(135deg, #f39c12, #e67e22); /* Gradiente naranja */
+/* Estilo del encabezado y pie de página */
+header, footer {
+  background-color: #222;
+  color: #fff;
   padding: 1rem;
   text-align: center;
-  color: #fff;
 }
 
 header h1 {
-  color: #fff;
-  border-bottom: 3px solid #e67e22; /* Línea de borde en naranja */
-  padding-bottom: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #f39c12; /* Naranja brillante */
+  border-bottom: 2px solid #f39c12;
 }
 
-/* Navegación */
+/* Estilo del contenedor de navegación */
 nav {
- /* Color de fondo azul oscuro */
+  background-color: #333;
   padding: 1rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 }
 
 nav a {
-  color: #fff;
-  display: block;
-  padding: 0.5rem;
+  color: #f39c12; /* Naranja brillante */
   text-decoration: none;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 nav a:hover {
-  color: #f39c12; /* Color de texto al pasar el mouse */
+  color: #fff;
+  background-color: #f39c12;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 
-/* Contenido principal */
-main {
-  margin: 1rem;
-}
-
+/* Estilo del área de contenido */
 main img {
-  float: right;
-  width: auto;
-  height: 200px;
-  border: 1px solid #f39c12; /* Borde en naranja */
-  margin: 5px;
-  padding: 2px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-}
-
-p {
-  padding: 0;
-}
-
-/* Pie de página */
-footer {
-  margin-top: 1em;
-  border-top: 1px solid #fff; /* Borde superior blanco */
-  text-align: center;
-  color: #fff;
-}
-
-/* Estilos de la caja */
-.box {
-  margin: 1rem;
-  padding: 1rem;
-  background: linear-gradient(135deg, #f39c12, #e67e22); /* Gradiente naranja */
-  color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-/* Estilos de grid */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr; /* Dos columnas, una más ancha que la otra */
-  gap: 1rem;
-  align-items: center;
-}
-
-/* Estilos de aside */
-aside {
-  position: relative;
-  width: 20rem;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-aside img {
   width: 100%;
+  max-width: 400px;
   height: auto;
+  border: 2px solid #f39c12; /* Borde del color naranja */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 1rem 0;
 }
 
-/* Estilos responsive */
+/* Estilo del párrafo */
+p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Estilo de los cuadros */
+.box {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #444;
+  color: #f0f0f0;
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+
+/* Estilo de la cuadrícula */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Estilo del pie de página */
+footer {
+  border-top: 1px solid #555;
+}
+
+/* Media Queries para hacer el diseño responsive */
 @media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  aside {
-    width: 100%;
+  nav a {
+    margin-bottom: 0.5rem;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  main img {
+    max-width: 100%;
   }
 }
