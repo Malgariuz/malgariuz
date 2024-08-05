@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: calibri;
+}
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;
+}
+aside {
+  position: relative;
+  width: 20rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+}
+aside img {
+  width: 250px;
+  height: auto;
+}
+
+
+
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a {
+  color: white;
+  display: block;
+  padding: .5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+h1 {
+  color: steelblue;
+  border-bottom: solid steelblue;
+}
+main img {
+float: right;
+width: auto;
+height: 200px;
+border: 1px solid steelblue;
+margin: 5px;
+padding: 2px;
+box-shadow: 0 0 30px gray;
+}
+p {
+  padding: 0;
+}
+footer {
+  margin-top: 1em;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: steelblue;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
