@@ -17,6 +17,9 @@ main {
   margin: 1rem auto;
   max-width: 1200px;
   padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Estilo del encabezado y pie de página */
@@ -57,13 +60,6 @@ nav a:hover {
 }
 
 /* Estilo del área de contenido */
-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-/* Imagen al lado del texto */
 main img {
   max-width: 100%;
   height: auto;
@@ -76,6 +72,22 @@ main img {
 p {
   line-height: 1.6;
   margin-bottom: 1rem;
+}
+
+/* Estilo del aside */
+aside.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+aside.box img {
+  width: 100%; /* Ajusta el ancho al contenedor */
+  max-width: 600px; /* Límite máximo de ancho */
+  height: auto;
+  border: 1px solid #f39c12;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Estilo de los cuadros */
@@ -94,23 +106,21 @@ footer {
 }
 
 /* Media Queries para hacer el diseño responsive */
-@media (min-width: 1366px) {
-  main {
+@media (min-width: 768px) {
+  .content-wrapper {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  main img {
-    flex: 1;
-    max-width: 50%;
-    height: auto;
-    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+    align-items: flex-start;
+    gap: 1rem;
   }
 
-  .text-content {
+  .content-wrapper img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  .content-wrapper p {
     flex: 1;
-    padding: 1rem;
+    padding-left: 1rem;
   }
 }
 
@@ -126,6 +136,12 @@ footer {
 
   main {
     flex-direction: column;
+  }
+
+  aside {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
   }
 }
 
