@@ -34,6 +34,7 @@ header h1 {
   font-family: 'Montserrat', sans-serif;
   color: #f39c12; /* Naranja brillante */
   border-bottom: 2px solid #f39c12;
+  margin-bottom: 2rem; /* Agrega espacio entre el título y las cajas */
 }
 
 /* Estilo del contenedor de navegación */
@@ -43,6 +44,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: background-color 0.3s; /* Transición suave para el fondo */
 }
 
 nav a {
@@ -50,20 +52,19 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Transición suave para el color, fondo y la sombra */
 }
 
 nav a:hover {
   color: #fff;
-  background-color: #f39c12;
-  padding: 0.5rem;
-  border-radius: 5px;
+  background-color: #f39c12; /* Fondo igual al color del box-shadow */
+  box-shadow: 0 0 5px #f39c12; /* Sombra de caja */
 }
 
 /* Estilo del área de contenido */
 main img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #f39c12; /* Borde del color naranja */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   margin: 1rem 0;
 }
@@ -80,29 +81,50 @@ aside.box {
   flex-direction: column;
   align-items: center;
   max-width: 100%;
+  background: #444; /* Fondo gris */
+  color: #f0f0f0;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 1rem;
 }
 
 aside.box img {
   width: 100%; /* Ajusta el ancho al contenedor */
   max-width: 600px; /* Límite máximo de ancho */
   height: auto;
-  border: 1px solid #f39c12;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin: 1rem 0; /* Agrega margen para separación */
+}
+
+/* Elimina el fondo en hover del aside */
+aside.box:hover {
+  background-color: #444; /* Mantiene el fondo sin cambios al pasar el cursor */
 }
 
 /* Estilo de los cuadros */
 .box {
   margin: 1rem 0;
   padding: 1rem;
-  background: #444;
+  background: #444; /* Fondo gris */
   color: #f0f0f0;
   border: 1px solid #555;
   border-radius: 8px;
 }
 
+/* Elimina los hover de la clase box */
+.box a:hover {
+  color: #f0f0f0;
+  background-color: #444; /* Mantiene el fondo sin cambios */
+}
+
 /* Estilo del pie de página */
 footer {
   border-top: 1px solid #555;
+}
+
+/* Efecto de cambio de fondo al hacer scroll */
+.scrolled-nav {
+  background-color: #f39c12; /* Color de fondo al hacer scroll */
 }
 
 /* Media Queries para hacer el diseño responsive */
