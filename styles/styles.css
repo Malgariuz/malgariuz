@@ -79,7 +79,8 @@ footer {
   width: 24px; /* Ancho del contenedor (igual al botón) */
   height: 48px; /* Alto del contenedor (doble que el botón) */
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Coloca los botones en columna */
+  justify-content: flex-end; /* Alinea los botones al fondo del contenedor */
   align-items: center;
   background: #444; /* Fondo gris del contenedor en modo oscuro */
   border-radius: 12px; /* Bordes más redondeados del contenedor */
@@ -99,7 +100,6 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
   position: absolute; /* Posición dentro del contenedor */
-  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -212,6 +212,16 @@ aside.box:hover {
     flex: 1;
     padding-left: 1rem;
   }
+
+  .button-container {
+    width: 24px; /* Tamaño del contenedor del botón */
+    height: 48px; /* Tamaño del contenedor del botón */
+  }
+
+  #toggle-theme {
+    width: 24px; /* Tamaño del botón */
+    height: 24px; /* Tamaño del botón */
+  }
 }
 
 @media (max-width: 768px) {
@@ -233,6 +243,17 @@ aside.box:hover {
     align-items: flex-start;
     margin: 0;
   }
+
+  .button-container {
+    width: 28px; /* Tamaño del contenedor del botón en dispositivos móviles */
+    height: 56px; /* Tamaño del contenedor del botón en dispositivos móviles */
+  }
+
+  #toggle-theme {
+    width: 28px; /* Tamaño del botón en dispositivos móviles */
+    height: 28px; /* Tamaño del botón en dispositivos móviles */
+    font-size: 0.9rem; /* Tamaño de fuente ajustado */
+  }
 }
 
 @media (max-width: 480px) {
@@ -246,6 +267,17 @@ aside.box:hover {
 
   main img {
     max-width: 100%;
+  }
+
+  .button-container {
+    width: 32px; /* Tamaño del contenedor del botón en dispositivos muy pequeños */
+    height: 64px; /* Tamaño del contenedor del botón en dispositivos muy pequeños */
+  }
+
+  #toggle-theme {
+    width: 32px; /* Tamaño del botón en dispositivos muy pequeños */
+    height: 32px; /* Tamaño del botón en dispositivos muy pequeños */
+    font-size: 1rem; /* Tamaño de fuente ajustado */
   }
 }
 
