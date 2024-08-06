@@ -1,15 +1,16 @@
-/* Resetear márgenes y rellenos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish&display=swap');
+
+:root {
+  --heading-font: 'Mulish', serif;
+  --paragraph-font: 'Montserrat', serif;
 }
 
 /* Estilo general del cuerpo */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: var(--paragraph-font);
   background: linear-gradient(135deg, #333, #111); /* Fondo oscuro gradiente */
   color: #f0f0f0;
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el fondo y el color del texto */
 }
 
 /* Estilo del contenedor principal */
@@ -23,11 +24,12 @@ main {
 }
 
 /* Estilo del encabezado y pie de página */
-header, footer {
+header {
   background-color: #222;
   color: #fff;
   padding: 1rem;
   text-align: center;
+  position: relative; /* Para el posicionamiento del botón */
 }
 
 header h1 {
@@ -37,14 +39,14 @@ header h1 {
   margin-bottom: 2rem; /* Agrega espacio entre el título y las cajas */
 }
 
-/* Estilo del contenedor de navegación */
-nav {
+header nav {
   background-color: #333;
   padding: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
   transition: background-color 0.3s; /* Transición suave para el fondo */
+  margin-bottom: 1rem; /* Espacio entre el nav y el botón */
 }
 
 nav a {
@@ -59,6 +61,76 @@ nav a:hover {
   color: #fff;
   background-color: #f39c12; /* Fondo igual al color del box-shadow */
   box-shadow: 0 0 5px #f39c12; /* Sombra de caja */
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #555;
+}
+
+/* Estilo del contenedor del botón de encendido/apagado */
+.button-container {
+  position: fixed; /* Posición fija en la pantalla */
+  bottom: 10px; /* Espacio desde el fondo */
+  left: 10px; /* Espacio desde el borde izquierdo */
+  width: 24px; /* Ancho del contenedor (igual al botón) */
+  height: 48px; /* Alto del contenedor (doble que el botón) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #444; /* Fondo gris del contenedor en modo oscuro */
+  border-radius: 12px; /* Bordes más redondeados del contenedor */
+  overflow: hidden; /* Asegura que el contenido no se salga del contenedor */
+}
+
+/* Estilo del botón de encendido/apagado */
+#toggle-theme {
+  background-color: #f39c12; /* Color del fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 50%; /* Botón redondo */
+  width: 24px; /* Tamaño del botón ajustado */
+  height: 24px; /* Tamaño del botón ajustado */
+  font-size: 0.75rem; /* Tamaño de fuente ajustado */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  position: absolute; /* Posición dentro del contenedor */
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+/* Iconos del botón */
+#toggle-theme .moon-icon {
+  display: none;
+}
+
+#toggle-theme .sun-icon {
+  display: block;
+}
+
+/* Estilo del botón en modo claro */
+#toggle-theme.light-mode {
+  background-color: #333; /* Gris oscuro para el botón en modo claro */
+}
+
+#toggle-theme.light-mode .moon-icon {
+  display: block;
+}
+
+#toggle-theme.light-mode .sun-icon {
+  display: none;
+}
+
+#toggle-theme.clicked {
+  transform: translateY(-24px); /* Movimiento vertical hacia arriba (ajustado para que encaje bien) */
 }
 
 /* Estilo del área de contenido */
@@ -88,6 +160,7 @@ aside.box {
   padding: 1rem;
 }
 
+/* Ajustes para imágenes en el aside */
 aside.box img {
   width: 100%; /* Ajusta el ancho al contenedor */
   max-width: 600px; /* Límite máximo de ancho */
@@ -115,11 +188,6 @@ aside.box:hover {
 .box a:hover {
   color: #f0f0f0;
   background-color: #444; /* Mantiene el fondo sin cambios */
-}
-
-/* Estilo del pie de página */
-footer {
-  border-top: 1px solid #555;
 }
 
 /* Efecto de cambio de fondo al hacer scroll */
@@ -179,4 +247,38 @@ footer {
   main img {
     max-width: 100%;
   }
+}
+
+/* Estilos para el modo claro */
+.light-mode {
+  background: #fff;
+  color: #333;
+}
+
+.light-mode header,
+.light-mode footer {
+  background-color: #eee;
+  color: #333;
+}
+
+.light-mode nav {
+  background-color: #f1f1f1;
+}
+
+.light-mode nav a {
+  color: #333;
+}
+
+.light-mode .box {
+  background: #f9f9f9;
+  color: #333;
+}
+
+.light-mode .box a {
+  color: #333;
+}
+
+/* Evita cambio de color al pasar el cursor en modo claro */
+.light-mode .box:hover {
+  background-color: #f9f9f9; /* Mantiene el fondo sin cambios al pasar el cursor */
 }
