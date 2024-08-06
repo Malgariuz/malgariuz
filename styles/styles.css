@@ -25,7 +25,6 @@ main {
 
 /* Estilo del encabezado y pie de página */
 header {
-  background-color: #222;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -49,6 +48,35 @@ header nav {
   margin-bottom: 1rem; /* Espacio entre el nav y el botón */
 }
 
+/* Estilo para el selector de idioma */
+.language-selector {
+  position: absolute; /* Posición absoluta dentro del nav */
+  top: 1rem; /* Espacio desde la parte superior del nav */
+  right: 1rem; /* Espacio desde el borde derecho del nav */
+  display: flex;
+  gap: 10px; /* Espacio entre los enlaces */
+}
+
+.language-selector img {
+  width: 24px; /* Tamaño del logo del mundo */
+  height: 24px; /* Tamaño del logo del mundo */
+}
+
+.language-selector a {
+  color: #f39c12; /* Color de texto para el enlace del selector de idioma */
+  text-decoration: none;
+  font-size: 1rem; /* Tamaño de fuente para el enlace */
+  padding: 5px 10px; /* Espacio alrededor del texto del enlace */
+  border: 1px solid #f39c12; /* Borde de color naranja para los enlaces */
+  border-radius: 5px; /* Bordes redondeados para los enlaces */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el fondo y el texto */
+}
+
+.language-selector a:hover {
+  background-color: #f39c12; /* Fondo naranja al pasar el cursor */
+  color: #fff; /* Color de texto blanco al pasar el cursor */
+}
+
 nav a {
   color: #f39c12; /* Naranja brillante */
   text-decoration: none;
@@ -69,6 +97,7 @@ footer {
   padding: 1rem;
   text-align: center;
   border-top: 1px solid #555;
+  position: relative; /* Para el posicionamiento del logo del mundo */
 }
 
 /* Estilo del contenedor del botón de encendido/apagado */
@@ -287,9 +316,7 @@ aside.box:hover {
   color: #333;
 }
 
-.light-mode header,
-.light-mode footer {
-  background-color: #eee;
+.light-mode header {
   color: #333;
 }
 
@@ -313,4 +340,18 @@ aside.box:hover {
 /* Evita cambio de color al pasar el cursor en modo claro */
 .light-mode .box:hover {
   background-color: #f9f9f9; /* Mantiene el fondo sin cambios al pasar el cursor */
+}
+
+/* Estilo para el logo del mundo en el pie de página */
+.footer-logo-container {
+  position: absolute; /* Posición absoluta dentro del pie de página */
+  bottom: 1rem; /* Espacio desde el borde inferior del pie de página */
+  right: 1rem; /* Espacio desde el borde derecho del pie de página */
+  width: 24px; /* Tamaño del logo del mundo */
+  height: 24px; /* Tamaño del logo del mundo */
+}
+
+.footer-logo-container img {
+  width: 100%; /* Ajusta el ancho del logo al contenedor */
+  height: auto; /* Mantiene la proporción del logo */
 }
