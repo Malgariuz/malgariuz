@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es"><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joel Mayorga | Portfolio</title>
-  <meta name="description" content="Describe tu página de inicio aquí usando palabras clave como tu nombre, el curso, el propósito de la página.">
+  <meta name="description" content="Describe your home page here using keywords like your name, the course, the purpose of the page.">
   <meta name="author" content="Malgariuz">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -14,8 +12,8 @@
   <header>
     <nav>
       <a href="#">Inicio</a>
-      <a href="https://malgariuz.github.io/wdd130/wwr/">Sitio Web de White Water Rafter</a>
-      <a href="https://malgariuz.github.io/wdd130/wwr/">Plan del Sitio de White Water Rafter</a>
+      <a href="https://malgariuz.github.io/wdd130/wwr/">Sitio web de rafting en aguas bravas</a>
+      <a href="https://malgariuz.github.io/wdd130/wwr/">Mapa del sitio de rafting en aguas bravas</a>
       <a href="https://www.linkedin.com/in/joelmayorga/" target="_blank">LinkedIn</a>
       <a href="https://www.facebook.com/mayorgaivanjoel/" target="_blank">Facebook</a>
     </nav>
@@ -26,15 +24,15 @@
       <div class="content-wrapper">
         <img src="Images/joel-photo.jpg" alt="Hola, soy Joel Mayorga">
         <p>
-          ¡Hola! Mi nombre es Joel Mayorga, soy de Argentina y me encanta la programación y el desarrollo de juegos. <br>
+          ¡Hola! Mi nombre es Joel Mayorga, soy de Argentina y me apasiona la programación y el desarrollo de videojuegos. <br>
           Soy de una ciudad llamada Villa Mercedes en la provincia de San Luis. Fui misionero en la Misión Chile Santiago Sur, 
-          y estuve allí menos de un año debido al coronavirus. <br>
+          y serví allí por menos de un año debido al coronavirus. <br>
           Debido a la pandemia, tuvimos que regresar a nuestro país. Después de unos días en un hotel, fui reasignado a la Misión Salta Argentina. 
-          Pasamos varios meses sin poder ir a la provincia de Salta debido a las restricciones por Covid-19.<br>
-          Actualmente soy estudiante de logística en una universidad aquí en mi ciudad. También soy fan de la programación, 
-          trabajando de forma independiente en un videojuego RPG en 2D. Debido a mis estudios, he tenido que ralentizar el desarrollo de mi primer videojuego, 
-          pero espero poder acelerar el trabajo a mediados de junio. <br>
-          En los próximos años, estaré trabajando en videojuegos en 3D, así como en animaciones en 3D y 2D, y muchos más videojuegos ya sea por mi cuenta 
+          Pasamos varios meses sin poder ir a la provincia de Salta debido a las restricciones por el Covid-19.<br>
+          Actualmente soy estudiante de logística en una universidad aquí en mi ciudad. También soy un fanático de la programación, 
+          trabajando de forma independiente en un videojuego RPG 2D. Debido a mis estudios, he tenido que ralentizar el desarrollo de este, 
+          mi primer videojuego, pero espero poder acelerar el trabajo a mediados de junio. <br>
+          En los próximos años, trabajaré en videojuegos 3D, animaciones 3D y 2D, y muchos más videojuegos ya sea por mi cuenta 
           o con un equipo de trabajo.
         </p>
       </div>
@@ -42,11 +40,12 @@
     <aside class="box">
       <h2>Argentina</h2>
       <img src="Images/buenos_aires.jpg" alt="Argentina ganando la copa del mundo">
-      <p>Argentina, tierra de "el mate", asados sabrosos, tango, buen fútbol y más. <br>
-        Es el segundo país más grande de América del Sur, después de Brasil. Es una federación de 23 provincias y una ciudad autónoma,
-        Buenos Aires, la región más industrializada. El país es rico en recursos naturales, especialmente plomo, zinc, estaño, cobre, magnesio, 
-        petróleo y uranio. En Argentina, cada uno de los veintitrés estados federales nombrados en la Constitución de la Nación Argentina se llama una 
-        provincia, que junto con la Ciudad Autónoma de Buenos Aires constituyen las jurisdicciones de primer orden-divisiones territoriales del país.
+      <p>
+        Argentina, tierra del "mate", ricos asados, tango, buen fútbol y mucho más. <br>
+        Es el segundo país más grande de Sudamérica, después de Brasil. Es una federación de 23 provincias y una ciudad autónoma,
+        Buenos Aires, la región más industrializada. El país es rico en recursos naturales, particularmente plomo, zinc, estaño, cobre, magnesio, 
+        petróleo y uranio. En Argentina, cada uno de los veintitrés estados federales nombrados en la Constitución Nacional Argentina se denomina 
+        provincia, que junto con la Ciudad Autónoma de Buenos Aires constituyen las jurisdicciones de primer orden - divisiones territoriales del país.
       </p>
     </aside>
   </div>
@@ -55,18 +54,21 @@
       © 2024 Joel Mayorga - San Luis, Argentina
     </p>
     <div class="language-selector">
-      <img src="/Images/worldwide.png" alt="Selector de Idioma">
+      <img src="Images/world-icon.png" alt="Selector de Idioma">
       <div class="language-dropdown">
-        <a href="index.html">English</a>
+        <a href="index.html">Inglés</a>
         <a href="index-es.html">Español</a>
       </div>
     </div>
   </footer>
 
-  <!-- Botón de encendido/apagado -->
   <div class="button-container">
-    <button id="toggle-theme">
+    <button id="toggle-theme" class="invisible">
       <i class="fas fa-moon moon-icon"></i>
       <i class="fas fa-sun sun-icon"></i>
     </button>
-  </div
+  </div>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+</html>

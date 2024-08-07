@@ -3,17 +3,21 @@ document.addEventListener('DOMContentLoaded', function () {
   // Obtén el botón de encendido/apagado
   const toggleButton = document.getElementById('toggle-theme');
   
-  // Obtén los botones de idioma
-  const langButtons = document.querySelectorAll('#lang-toggle');
-  
-  // Obtén los elementos de idioma
-  const langElements = document.querySelectorAll('.lang');
+  // Desactiva las transiciones temporalmente
+  toggleButton.style.transition = 'none';
   
   // Verifica si el tema guardado en localStorage es 'light-mode'
   if (localStorage.getItem('theme') === 'light-mode') {
     document.body.classList.add('light-mode');
     toggleButton.classList.add('light-mode');
+    toggleButton.classList.add('clicked'); // Asegura que el botón esté arriba en modo claro
   }
+  
+  // Rehabilita las transiciones después de que las clases se han aplicado
+  setTimeout(() => {
+    toggleButton.style.transition = '';
+    toggleButton.classList.remove('invisible'); // Hace visible el botón después de aplicar las clases
+  }, 0);
   
   // Agrega un evento de clic al botón de tema
   toggleButton.addEventListener('click', function () {
@@ -31,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function () {
       localStorage.setItem('theme', 'dark-mode');
     }
   });
+
+  // Obtén los botones de idioma
+  const langButtons = document.querySelectorAll('.lang-button');
+  
+  // Obtén los elementos de idioma
+  const langElements = document.querySelectorAll('.lang');
   
   // Función para cambiar el idioma
   function changeLanguage(lang) {

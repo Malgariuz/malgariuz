@@ -10,7 +10,7 @@ body {
   font-family: var(--paragraph-font);
   background: linear-gradient(135deg, #333, #111); /* Fondo oscuro gradiente */
   color: #f0f0f0;
-  transition: background-color 0.3s, color 0.3s; /* Transici√≥n suave para el fondo y el color del texto */
+  transition: background-color 0.3s, color 0.3s; /* TransiciÛn suave para el fondo y el color del texto */
 }
 
 /* Estilo del contenedor principal */
@@ -23,19 +23,19 @@ main {
   align-items: center;
 }
 
-/* Estilo del encabezado y pie de p√°gina */
+/* Estilo del encabezado y pie de p·gina */
 header {
   color: #fff;
   padding: 1rem;
   text-align: center;
-  position: relative; /* Para el posicionamiento del bot√≥n */
+  position: relative; /* Para el posicionamiento del botÛn */
 }
 
 header h1 {
   font-family: 'Montserrat', sans-serif;
   color: #f39c12; /* Naranja brillante */
   border-bottom: 2px solid #f39c12;
-  margin-bottom: 2rem; /* Agrega espacio entre el t√≠tulo y las cajas */
+  margin-bottom: 2rem; /* Agrega espacio entre el tÌtulo y las cajas */
 }
 
 header nav {
@@ -44,13 +44,13 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  transition: background-color 0.3s; /* Transici√≥n suave para el fondo */
-  margin-bottom: 1rem; /* Espacio entre el nav y el bot√≥n */
+  transition: background-color 0.3s; /* TransiciÛn suave para el fondo */
+  margin-bottom: 1rem; /* Espacio entre el nav y el botÛn */
 }
 
 /* Estilo para el selector de idioma */
 .language-selector {
-  position: absolute; /* Posici√≥n absoluta dentro del nav */
+  position: absolute; /* PosiciÛn absoluta dentro del nav */
   top: 1rem; /* Espacio desde la parte superior del nav */
   right: 1rem; /* Espacio desde el borde derecho del nav */
   display: flex;
@@ -58,18 +58,18 @@ header nav {
 }
 
 .language-selector img {
-  width: 24px; /* Tama√±o del logo del mundo */
-  height: 24px; /* Tama√±o del logo del mundo */
+  width: 24px; /* TamaÒo del logo del mundo */
+  height: 24px; /* TamaÒo del logo del mundo */
 }
 
 .language-selector a {
   color: #f39c12; /* Color de texto para el enlace del selector de idioma */
   text-decoration: none;
-  font-size: 1rem; /* Tama√±o de fuente para el enlace */
+  font-size: 1rem; /* TamaÒo de fuente para el enlace */
   padding: 5px 10px; /* Espacio alrededor del texto del enlace */
   border: 1px solid #f39c12; /* Borde de color naranja para los enlaces */
   border-radius: 5px; /* Bordes redondeados para los enlaces */
-  transition: background-color 0.3s, color 0.3s; /* Transici√≥n suave para el fondo y el texto */
+  transition: background-color 0.3s, color 0.3s; /* TransiciÛn suave para el fondo y el texto */
 }
 
 .language-selector a:hover {
@@ -82,7 +82,7 @@ nav a {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 600;
-  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* Transici√≥n suave para el color, fondo y la sombra */
+  transition: color 0.3s, background-color 0.3s, box-shadow 0.3s; /* TransiciÛn suave para el color, fondo y la sombra */
 }
 
 nav a:hover {
@@ -100,43 +100,43 @@ footer {
   position: relative; /* Para el posicionamiento del logo del mundo */
 }
 
-/* Estilo del contenedor del bot√≥n de encendido/apagado */
+/* Estilo del contenedor del botÛn de encendido/apagado */
 .button-container {
-  position: fixed; /* Posici√≥n fija en la pantalla */
+  position: fixed; /* PosiciÛn fija en la pantalla */
   bottom: 10px; /* Espacio desde el fondo */
   left: 10px; /* Espacio desde el borde izquierdo */
-  width: 24px; /* Ancho del contenedor (igual al bot√≥n) */
-  height: 48px; /* Alto del contenedor (doble que el bot√≥n) */
+  width: 24px; /* Ancho del contenedor (igual al botÛn) */
+  height: 48px; /* Alto del contenedor (doble que el botÛn) */
   display: flex;
   flex-direction: column; /* Coloca los botones en columna */
   justify-content: flex-end; /* Alinea los botones al fondo del contenedor */
   align-items: center;
   background: #444; /* Fondo gris del contenedor en modo oscuro */
-  border-radius: 12px; /* Bordes m√°s redondeados del contenedor */
+  border-radius: 12px; /* Bordes m·s redondeados del contenedor */
   overflow: hidden; /* Asegura que el contenido no se salga del contenedor */
 }
 
-/* Estilo del bot√≥n de encendido/apagado */
+/* Estilo del botÛn de encendido/apagado */
 #toggle-theme {
-  background-color: #f39c12; /* Color del fondo del bot√≥n */
-  color: #fff; /* Color del texto del bot√≥n */
+  background-color: #f39c12; /* Color del fondo del botÛn */
+  color: #fff; /* Color del texto del botÛn */
   border: none;
-  border-radius: 50%; /* Bot√≥n redondo */
-  width: 24px; /* Tama√±o del bot√≥n ajustado */
-  height: 24px; /* Tama√±o del bot√≥n ajustado */
-  font-size: 0.75rem; /* Tama√±o de fuente ajustado */
+  border-radius: 50%; /* BotÛn redondo */
+  width: 24px; /* TamaÒo del botÛn ajustado */
+  height: 24px; /* TamaÒo del botÛn ajustado */
+  font-size: 0.75rem; /* TamaÒo de fuente ajustado */
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.3s;
-  position: absolute; /* Posici√≥n dentro del contenedor */
+  position: absolute; /* PosiciÛn dentro del contenedor */
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
-  z-index: 1000; /* Asegura que el bot√≥n est√© por encima de otros elementos */
+  z-index: 1000; /* Asegura que el botÛn estÈ por encima de otros elementos */
 }
 
-/* Iconos del bot√≥n */
+/* Iconos del botÛn */
 #toggle-theme .moon-icon {
   display: none;
 }
@@ -145,9 +145,9 @@ footer {
   display: block;
 }
 
-/* Estilo del bot√≥n en modo claro */
+/* Estilo del botÛn en modo claro */
 #toggle-theme.light-mode {
-  background-color: #333; /* Gris oscuro para el bot√≥n en modo claro */
+  background-color: #333; /* Gris oscuro para el botÛn en modo claro */
 }
 
 #toggle-theme.light-mode .moon-icon {
@@ -159,10 +159,10 @@ footer {
 }
 
 #toggle-theme.clicked {
-  transform: translateY(-100%);  /*Movimiento vertical hacia arriba (ajustado para que encaje bien) */
+  transform: translateY(-24px); /* Movimiento vertical hacia arriba (ajustado para que encaje bien) */
 }
 
-/* Estilo del √°rea de contenido */
+/* Estilo del ·rea de contenido */
 main img {
   max-width: 100%;
   height: auto;
@@ -170,7 +170,7 @@ main img {
   margin: 1rem 0;
 }
 
-/* Estilo del p√°rrafo */
+/* Estilo del p·rrafo */
 p {
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -189,13 +189,13 @@ aside.box {
   padding: 1rem;
 }
 
-/* Ajustes para im√°genes en el aside */
+/* Ajustes para im·genes en el aside */
 aside.box img {
   width: 100%; /* Ajusta el ancho al contenedor */
-  max-width: 600px; /* L√≠mite m√°ximo de ancho */
+  max-width: 600px; /* LÌmite m·ximo de ancho */
   height: auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  margin: 1rem 0; /* Agrega margen para separaci√≥n */
+  margin: 1rem 0; /* Agrega margen para separaciÛn */
 }
 
 /* Elimina el fondo en hover del aside */
@@ -224,7 +224,7 @@ aside.box:hover {
   background-color: #f39c12; /* Color de fondo al hacer scroll */
 }
 
-/* Media Queries para hacer el dise√±o responsive */
+/* Media Queries para hacer el diseÒo responsive */
 @media (min-width: 768px) {
   .content-wrapper {
     display: flex;
@@ -243,14 +243,13 @@ aside.box:hover {
   }
 
   .button-container {
-    width: 24px; /* Tama√±o del contenedor del bot√≥n */
-    height: 48px; /* Tama√±o del contenedor del bot√≥n */
+    width: 24px; /* TamaÒo del contenedor del botÛn */
+    height: 48px; /* TamaÒo del contenedor del botÛn */
   }
 
   #toggle-theme {
-    position: absolute;
-    width: 24px; /* Tama√±o del bot√≥n */
-    height: 24px; /* Tama√±o del bot√≥n */
+    width: 24px; /* TamaÒo del botÛn */
+    height: 24px; /* TamaÒo del botÛn */
   }
 }
 
@@ -275,15 +274,14 @@ aside.box:hover {
   }
 
   .button-container {
-    width: 28px; /* Tama√±o del contenedor del bot√≥n en dispositivos m√≥viles */
-    height: 56px; /* Tama√±o del contenedor del bot√≥n en dispositivos m√≥viles */
+    width: 28px; /* TamaÒo del contenedor del botÛn en dispositivos mÛviles */
+    height: 56px; /* TamaÒo del contenedor del botÛn en dispositivos mÛviles */
   }
 
   #toggle-theme {
-    position: absolute;
-    width: 28px; /* Tama√±o del bot√≥n en dispositivos m√≥viles */
-    height: 28px; /* Tama√±o del bot√≥n en dispositivos m√≥viles */
-    font-size: 0.9rem; /* Tama√±o de fuente ajustado */
+    width: 28px; /* TamaÒo del botÛn en dispositivos mÛviles */
+    height: 28px; /* TamaÒo del botÛn en dispositivos mÛviles */
+    font-size: 0.9rem; /* TamaÒo de fuente ajustado */
   }
 }
 
@@ -301,15 +299,14 @@ aside.box:hover {
   }
 
   .button-container {
-    width: 32px; /* Tama√±o del contenedor del bot√≥n en dispositivos muy peque√±os */
-    height: 64px; /* Tama√±o del contenedor del bot√≥n en dispositivos muy peque√±os */
+    width: 32px; /* TamaÒo del contenedor del botÛn en dispositivos muy pequeÒos */
+    height: 64px; /* TamaÒo del contenedor del botÛn en dispositivos muy pequeÒos */
   }
 
   #toggle-theme {
-    position: absolute;
-    width: 32px; /* Tama√±o del bot√≥n en dispositivos muy peque√±os */
-    height: 32px; /* Tama√±o del bot√≥n en dispositivos muy peque√±os */
-    font-size: 1rem; /* Tama√±o de fuente ajustado */
+    width: 32px; /* TamaÒo del botÛn en dispositivos muy pequeÒos */
+    height: 32px; /* TamaÒo del botÛn en dispositivos muy pequeÒos */
+    font-size: 1rem; /* TamaÒo de fuente ajustado */
   }
 }
 
@@ -345,22 +342,16 @@ aside.box:hover {
   background-color: #f9f9f9; /* Mantiene el fondo sin cambios al pasar el cursor */
 }
 
-/* Estilo para el logo del mundo en el pie de p√°gina */
+/* Estilo para el logo del mundo en el pie de p·gina */
 .footer-logo-container {
-  position: absolute; /* Posici√≥n absoluta dentro del pie de p√°gina */
-  bottom: 1rem; /* Espacio desde el borde inferior del pie de p√°gina */
-  right: 1rem; /* Espacio desde el borde derecho del pie de p√°gina */
-  width: 24px; /* Tama√±o del logo del mundo */
-  height: 24px; /* Tama√±o del logo del mundo */
+  position: absolute; /* PosiciÛn absoluta dentro del pie de p·gina */
+  bottom: 1rem; /* Espacio desde el borde inferior del pie de p·gina */
+  right: 1rem; /* Espacio desde el borde derecho del pie de p·gina */
+  width: 24px; /* TamaÒo del logo del mundo */
+  height: 24px; /* TamaÒo del logo del mundo */
 }
 
 .footer-logo-container img {
   width: 100%; /* Ajusta el ancho del logo al contenedor */
-  height: auto; /* Mantiene la proporci√≥n del logo */
-}
-/* Clase para hacer invisible el bot√≥n al cargar la p√°gina */
-.invisible {
-  opacity: 0;
-  position: absolute; /* Posiciona el bot√≥n fuera de la vista */
-  pointer-events: none; /* Evita cualquier interacci√≥n con el bot√≥n */
+  height: auto; /* Mantiene la proporciÛn del logo */
 }

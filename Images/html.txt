@@ -50,20 +50,20 @@
   </div>
   <footer>
     <p>
-      Â© 2024 Joel Mayorga - San Luis, Argentina
+      © 2024 Joel Mayorga - San Luis, Argentina
     </p>
     <div class="language-selector">
       <img src="Images/world-icon.png" alt="Language Selector">
       <div class="language-dropdown">
         <a href="index.html">English</a>
-        <a href="index-es.html">EspaÃ±ol</a>
+        <a href="index-es.html">Español</a>
       </div>
     </div>
   </footer>
 
-  <!-- BotÃ³n de encendido/apagado -->
+  <!-- Botón de encendido/apagado -->
   <div class="button-container">
-    <button id="toggle-theme" class="invisible">
+    <button id="toggle-theme" class="">
       <i class="fas fa-moon moon-icon"></i>
       <i class="fas fa-sun sun-icon"></i>
     </button>
