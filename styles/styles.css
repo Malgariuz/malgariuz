@@ -243,6 +243,7 @@ aside.box:hover {
   }
 
   .button-container {
+    border-radius: 15px;
     width: 24px; /* Tamaño del contenedor del botón */
     height: 48px; /* Tamaño del contenedor del botón */
   }
@@ -275,6 +276,7 @@ aside.box:hover {
   }
 
   .button-container {
+    border-radius: 15px;
     width: 28px; /* Tamaño del contenedor del botón en dispositivos móviles */
     height: 56px; /* Tamaño del contenedor del botón en dispositivos móviles */
   }
@@ -301,13 +303,14 @@ aside.box:hover {
   }
 
   .button-container {
+    border-radius: 15px;
     width: 32px; /* Tamaño del contenedor del botón en dispositivos muy pequeños */
     height: 64px; /* Tamaño del contenedor del botón en dispositivos muy pequeños */
   }
 
   #toggle-theme {
     position: absolute;
-    width: 32px; /* Tamaño del botón en dispositivos muy pequeños */
+    width: 29px; /* Tamaño del botón en dispositivos muy pequeños */
     height: 32px; /* Tamaño del botón en dispositivos muy pequeños */
     font-size: 1rem; /* Tamaño de fuente ajustado */
   }
