@@ -1,73 +1,300 @@
-<html lang="en"><head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Joel Mayorga | Portfolio</title>
-  <meta name="description" content="Describe your home page here using keywords like your name, the course, the purpose of the page.">
-  <meta name="author" content="Malgariuz">
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Mayorga - Portafolio Moderno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body class="">
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="https://malgariuz.github.io/wdd130/wwr/">White Water Rafter Web Site</a>
-      <a href="https://malgariuz.github.io/wdd130/wwr/">White Water Rafter Siteplan</a>
-      <a href="https://www.linkedin.com/in/joelmayorga/" target="_blank">LinkedIn</a>
-      <a href="https://www.facebook.com/mayorgaivanjoel/" target="_blank">Facebook</a>
-    </nav>
-  </header>
-  <div class="grid">
-    <main>
-      <h1>Joel Mayorga</h1>
-      <div class="content-wrapper">
-        <img src="Images/joel-photo.jpg" alt="Hi, I'm Joel Mayorga">
-        <p>
-          Hi! My name is Joel Mayorga, I'm from Argentina, and I love programming and game development. <br>
-          I am from a city called Villa Mercedes in the province of San Luis. I was a missionary in the Chile Santiago Sur Mission, 
-          and I served there for less than a year because of the coronavirus. <br>
-          Due to the pandemic, we had to return to our country. After a few days in a hotel, I was reassigned to the Salta Argentina Mission. 
-          We spent several months without being able to go to the province of Salta due to Covid-19 restrictions.<br>
-          I am currently a logistics student at a college here in my city. I am also a programming fan, 
-          working independently on a 2D RPG Video Game. Due to my studies, I have had to slow down the development of this my first video game, 
-          but I hope I can speed up work in mid-June. <br>
-          In the next few years, I'll be working on 3D videogames, as well as 3D and 2D animations, and much more videogames either on my own 
-          or with a work team.
-        </p>
+<body>
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fas fa-lightbulb"></i>
+    <i class="fas fa-moon"></i>
+  </button>
+  <main>
+    <section class="hero" id="inicio" style="background-color: #0f0f1a;">
+      <div class="portada" style="background-image: url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 0.2;"></div>
+      <div class="container">
+        <div class="hero-content" data-aos="fade-right">
+          <h1>Joel Mayorga</h1>
+          <p>Diseñador Creativo &amp; Desarrollador Web</p>
+          <div class="hero-buttons">
+            <button class="hero-button cta-button">Ver mi trabajo</button>
+            <button class="hero-button about-button">Mi Resumen</button>
+          </div>
+          <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
       </div>
-    </main>
-    <aside class="box">
-      <h2>Argentina</h2>
-      <img src="Images/buenos_aires.jpg" alt="Argentina winning the world cup">
-      <p>Argentina, land of "el mate", tasty roasts, tango, good football and more. <br>
-        It is the second largest country in South America, after Brazil. It is a federation of 23 provinces and an autonomous city,
-        Buenos Aires, the most industrialized region. The country is rich in natural resources, particularly lead, zinc, tin, copper, magnesium, 
-        oil, and uranium. In Argentina, each of the twenty-three federated states named in the Constitution of the Argentine Nation is called a 
-        province, which together with the Autonomous City of Buenos Aires constitute the first-order jurisdictions-territorial divisions of the country.
-      </p>
-    </aside>
-  </div>
-  <footer>
-    <div class="language-selector">
-      <div class="language-dropdown">
-        <a href="index.html">English</a>
-        <a href="index-es.html">Español</a>
+    </section>
+
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">Joel Mayorga<style>
+            @media (max-width: 768px) {
+              .logo{
+                display:none;
+              }
+            }
+          </style></div>
+          <div class="nav-links">
+            <style>
+              @media (max-width: 768px) {
+                .nav-links {
+                 gap: 1rem}
+                 .nav-links a {
+                  font-weight: bold;
+                  font-size: 75%;
+                 }
+              }
+              @media (max-width: 380px){
+                .nav-links a {
+                    font-weight: 600;
+                    font-size: 50%;}
+              }
+
+
+              </style>
+            <a href="#inicio">Inicio</a>
+            <a href="#about-me">Sobre Mí</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#services">Servicios</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about-me" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Sobre Mí</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="/Images/about.jpg" alt="Foto de Joel Mayorga sonriendo, vistiendo un sweater azul oscuro" width="200" height="200" style="object-fit: cover; border: 3px solid var(--color-orange); box-shadow: 0 0 20px rgba(255, 107, 53, 0.3); border-radius: 50%;">
+          </div>
+          <div class="about-text">
+            <p>Soy un apasionado diseñador y desarrollador web con experiencia en la creación de experiencias digitales únicas y atractivas. Mi enfoque combina creatividad con funcionalidad, siempre buscando innovar y superar las expectativas de mis clientes.</p>
+            <p>Con más de 8 años de experiencia en la industria, he trabajado en una amplia gama de proyectos, desde sitios web corporativos hasta aplicaciones web complejas. Mi experiencia abarca desde el diseño de interfaces de usuario hasta el desarrollo full-stack, lo que me permite ofrecer soluciones integrales a mis clientes.</p>
+            <ul class="about-details">
+              <li><i class="fas fa-calendar-alt"></i> <strong>Fecha de nacimiento:</strong> 15 de septiembre de 1990</li>
+              <li><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Ciudad de México, México</li>
+              <li><i class="fas fa-briefcase"></i> <strong>Experiencia:</strong> 8+ años en diseño y desarrollo web</li>
+              <li><i class="fas fa-graduation-cap"></i> <strong>Educación:</strong> Licenciatura en Diseño Gráfico y Desarrollo Web</li>
+              <li><i class="fas fa-language"></i> <strong>Idiomas:</strong> Español (nativo), Inglés (fluido), Francés (intermedio)</li>
+            </ul>
+            <button class="hero-button cta-button">Contrátame</button>
+          </div>
+        </div>
+      </div>
+      <style>
+        @media (max-width: 768px) {
+          #about-me .about-content {
+            flex-direction: column;
+            align-items: center;
+          }
+          #about-me .about-image {
+            margin-bottom: 2rem;
+          }
+          #about-me .about-text {
+            text-align: center;
+          }
+          #about-me .about-details {
+            display: inline-block;
+            text-align: left;
+          }
+        }
+      </style>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-container">
+          <div class="skill-item">
+            <span class="skill-name">HTML</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-skill="HTML" data-percentage="78">
+                <span class="skill-percentage">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">CSS</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-skill="CSS" data-percentage="70">
+                <span class="skill-percentage">0%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-progress" data-skill="JavaScript" data-percentage="60">
+                <span class="skill-percentage">0%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Servicios</h2>
+        <div class="services-grid">
+          <div class="service-item" data-aos="fade-up">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Diseño Web</h3>
+            <p>Creación de diseños atractivos y funcionales para tu presencia en línea.</p>
+            <button class="service-request-btn">Solicitar</button>
+          </div>
+          <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Desarrollo de Apps</h3>
+            <p>Desarrollo de aplicaciones móviles intuitivas y eficientes.</p>
+            <button class="service-request-btn">Solicitar</button>
+          </div>
+          <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-code"></i>
+            <h3>Desarrollo Web</h3>
+            <p>Implementación de sitios web responsivos y de alto rendimiento.</p>
+            <button class="service-request-btn">Solicitar</button>
+          </div>
+          <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-pen-fancy"></i>
+            <h3>Creación de Contenido</h3>
+            <p>Producción de contenido atractivo y relevante para tu audiencia.</p>
+            <button class="service-request-btn">Solicitar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Mis Proyectos</h2>
+        <div class="projects-grid">
+          <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="Diseño moderno de una aplicación móvil con gradientes de naranja y azul" width="300" height="200">
+            <div class="project-item-content">
+              <h3>Diseño de App</h3>
+              <p>Una aplicación móvil moderna con interfaz intuitiva</p>
+            </div>
+            <div class="project-overlay">Ver Detalles</div>
+            <div class="project-details">
+              <h4>Detalles del Proyecto</h4>
+              <p>Este proyecto consistió en el diseño de una aplicación móvil innovadora con una interfaz de usuario intuitiva y atractiva. Se utilizaron gradientes de naranja y azul para crear un aspecto moderno y vibrante.</p>
+              <ul>
+                <li>Diseño de UI/UX</li>
+                <li>Prototipado interactivo</li>
+                <li>Implementación de diseño responsivo</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="Sitio web minimalista con fondo oscuro y acentos naranjas" width="300" height="200">
+            <div class="project-item-content">
+              <h3>Sitio Web Corporativo</h3>
+              <p>Diseño elegante y funcional para una empresa tecnológica</p>
+            </div>
+            <div class="project-overlay">Ver Detalles</div>
+            <div class="project-details">
+              <h4>Detalles del Proyecto</h4>
+              <p>Este sitio web fue diseñado con un enfoque minimalista y moderno que representa la identidad de la empresa de forma efectiva.</p>
+              <ul>
+                <li>Desarrollo web responsivo</li>
+                <li>Optimización SEO</li>
+                <li>Integración con redes sociales</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-item" data-aos="fade-up" data-aos-delay="300">
+            <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="Branding creativo con logotipo naranja sobre fondo oscuro" width="300" height="200">
+            <div class="project-item-content">
+              <h3>Branding Creativo</h3>
+              <p>Identidad visual única para una startup innovadora</p>
+            </div>
+            <div class="project-overlay">Ver Detalles</div>
+            <div class="project-details">
+              <h4>Detalles del Proyecto</h4>
+              <p>Desarrollamos un branding completo que incluye logotipo, paleta de colores y aplicaciones de marca para crear una fuerte identidad en el mercado.</p>
+              <ul>
+                <li>Creación de logotipo</li>
+                <li>Manual de identidad visual</li>
+                <li>Diseño de materiales promocionales</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Contáctame</h2>
+        <form action="https://formspree.io/f/your_form_id" method="POST">
+          <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required="">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required="">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required=""></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="project-details-popup">
+      <div class="project-details-content">
+        <button class="close-popup-btn">×</button>
+        <h4></h4>
+        <p></p>
+        <ul></ul>
       </div>
     </div>
-    <p>© 2024 Joel Mayorga - San Luis, Argentina</p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2023 Joel Mayorga. Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="https://github.com/joelmayorga" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/joelmayorga" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/joelmayorga" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <!--
+      <div class="social-icons">
+        <a href="https://github.com/joelmayorga" target="_blank" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+          </svg>
+        </a>
+        <a href="https://instagram.com/joelmayorga" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/joelmayorga" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>-->
+      <div class="language-toggle">
+        <button id="language-switch">English</button>
+      </div>
+    </div> 
   </footer>
-
-  <!-- Botón de encendido/apagado -->
-  <div class="button-container">
-    <button id="toggle-theme" class="invisible">
-      <i class="fas fa-moon moon-icon"></i>
-      <i class="fas fa-sun sun-icon"></i>
-    </button>
-  </div>
-
+  
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="scripts/scripts.js"></script>
 
-
-
-</body><!--last update 05/8/2024 --></html>
+</body>
+</html>
